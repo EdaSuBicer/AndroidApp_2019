@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="login">LOGIN</string>
+    <string name="Female">female</string>
+    <string name="Male">male</string>
+    <string name="Last_name">Last Name</string>
+    <string name="Name">Name</string>
+    <string name="age">Age</string>
+    <string name="password">Password</string>
+    <string name="health_service">Health Service</string>
+    <string name="email">Email</string>
+    <string name="no_account_create_one">No account? Create one</string>
+    <string name="_123456_healthservice_com">123456@healthservice.com</string>
+    <string name="create">Create Account</string>
+    <string name="signup_password">Password</string>
+    <string name="btn_return">Already have an account ?    return to sign in</string>
+    <string name="signup_text_acctype">Account Type</string>
+    <string name="cbox_patientType">Patient</string>
+    <string name="cbox_employeeType">Employee</string>
+    <string name="welcome_username_you_are_connected_as_account_type">Welcome username! You are connected as account type.</string>
+    <string name="todo">TODO</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="doc">TODO</string>
+    <string name="laboratory">Laboratory</string>
+    <string name="consultation">Consultation</string>
+    <string name="prescription">Prescription</string>
+    <string name="emergency">Emergency</string>
+    <string name="vaccination">Vaccination</string>
+    <string name="modWork">Modify Clinic Hours</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thurs">Thursday</string>
+    <string name="frid">Friday</string>
+    <string name="satu">Saturday</string>
+    <string name="sund">Sunday</string>
+    <string name="submit">Submit</string>
+    <string name="book">Book</string>
+
+</resources>

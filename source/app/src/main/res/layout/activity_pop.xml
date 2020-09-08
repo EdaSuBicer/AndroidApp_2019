@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_gradient"
+    android:orientation="vertical"
+    tools:context=".MainActivity">>
+
+
+    <TextView
+        android:id="@+id/rateService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:text="Rate your service!"
+        android:textColor="@color/colorAccent"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorInput"
+        android:paddingStart="0dp"
+        android:paddingEnd="0dp"
+        android:progressBackgroundTint="@color/colorPrimary"
+        android:rating="1.0"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="259dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="top"
+            android:background="@color/colorPrimary"
+            android:text="Remind me later"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="4dp"
+            android:layout_gravity="top"
+            android:background="@color/colorPrimary"
+            android:text="submit"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

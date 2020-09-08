@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@drawable/back_gradient">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/vaccinationButton"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/prescription_back"
+            android:scaleType="fitCenter"
+            android:text="@string/vaccination"
+            android:textColor="@color/colorInput"
+            android:textSize="16sp"
+            android:transformPivotX="100dp"
+            android:transformPivotY="100dp" />
+
+        <Button
+            android:id="@+id/EmergencyButton"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/prescription_back"
+            android:scaleType="fitCenter"
+            android:text="@string/emergency"
+            android:textColor="@color/colorInput"
+            android:textSize="16sp"
+            android:transformPivotX="100dp"
+            android:transformPivotY="100dp" />
+
+        <Button
+            android:id="@+id/PrescriptionAsButton"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/prescription_back"
+            android:scaleType="fitCenter"
+            android:text="@string/prescription"
+            android:textColor="@color/colorInput"
+            android:textSize="16sp"
+            android:transformPivotX="100dp"
+            android:transformPivotY="100dp" />
+
+        <Button
+            android:id="@+id/DiagnosticLabsButton"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/prescription_back"
+            android:scaleType="fitCenter"
+            android:text="@string/laboratory"
+            android:textColor="@color/colorInput"
+            android:textSize="16sp"
+            android:transformPivotX="100dp"
+            android:transformPivotY="100dp" />
+
+        <Button
+            android:id="@+id/ConsultationButton"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/prescription_back"
+            android:scaleType="fitCenter"
+            android:text="@string/consultation"
+            android:textColor="@color/colorInput"
+            android:textSize="16sp"
+            android:transformPivotX="100dp"
+            android:transformPivotY="100dp" />
+
+        <Button
+            android:id="@+id/MentalHealthButton"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/prescription_back"
+            android:scaleType="fitCenter"
+            android:text="mental health"
+            android:textColor="@color/colorInput"
+            android:textSize="16sp"
+            android:transformPivotX="100dp"
+            android:transformPivotY="100dp" />
+
+        <Button
+            android:id="@+id/NutritionButton"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/prescription_back"
+            android:scaleType="fitCenter"
+            android:text="Nutritional Counseling"
+            android:textColor="@color/colorInput"
+            android:textSize="16sp"
+            android:transformPivotX="100dp"
+            android:transformPivotY="100dp" />
+
+        <Button
+            android:id="@+id/smokingButton"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/prescription_back"
+            android:scaleType="fitCenter"
+            android:text="Smoking cessation support"
+            android:textColor="@color/colorInput"
+            android:textSize="16sp"
+            android:transformPivotX="100dp"
+            android:transformPivotY="100dp" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+

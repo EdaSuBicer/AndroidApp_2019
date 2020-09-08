@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@drawable/back_gradient">
+
+
+    <Button
+        android:id="@+id/buttonCreateService"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/prescription_back"
+        android:onClick="create"
+        android:text="Create Service"
+        android:textColor="@color/colorInput"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonRemoveService"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/prescription_back"
+        android:onClick="remove"
+        android:text="Remove Service "
+        android:textColor="@color/colorInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonModifyService" />
+
+    <Button
+        android:id="@+id/buttonModifyService"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/prescription_back"
+        android:onClick="modify"
+        android:text="Modify Service"
+        android:textColor="@color/colorInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCreateService" />
+
+    <Button
+        android:id="@+id/buttonDeleteEmployeeAccount"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="36dp"
+        android:background="@drawable/prescription_back"
+        android:onClick="deleteAcc"
+        android:text="Delete Account"
+        android:textColor="@color/colorInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRemoveService" />
+
+    <Button
+        android:id="@+id/adminServices"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="36dp"
+        android:background="@drawable/prescription_back"
+        android:onClick="deleteAcc"
+        android:text="List of services"
+        android:textColor="@color/colorInput"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDeleteEmployeeAccount"
+        app:layout_constraintVertical_bias="0.263" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="clinic cruiser"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Booking"></activity>
+        <activity android:name=".Search" />
+        <activity android:name=".popSmoking" />
+        <activity android:name=".popNutrition" />
+        <activity android:name=".popMental" />
+        <activity android:name=".EmployeeAddServices" />
+        <activity android:name=".EmployeeProfile" />
+        <activity android:name=".popConsultation" />
+        <activity android:name=".popLab" />
+        <activity android:name=".popPrescription" />
+        <activity android:name=".popEmergency" />
+        <activity android:name=".popNoService" />
+        <activity android:name=".popVaccination" />
+        <activity android:name=".popDeleteAccount" />
+        <activity android:name=".popModifyService" />
+        <activity android:name=".popRemoveService" />
+        <activity android:name=".popCreateService" />
+        <activity android:name=".Calendar_Activity" />
+        <activity android:name=".ActivityClinicHours" />
+        <activity
+            android:name=".popActivity"
+            android:theme="@style/popUpForm" />
+        <activity android:name=".AdminServices" />
+        <activity
+            android:name=".WelcomePage"
+            android:parentActivityName=".SignUP" />
+        <activity android:name=".SignUP" />
+        <activity android:name=".adminSettings" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

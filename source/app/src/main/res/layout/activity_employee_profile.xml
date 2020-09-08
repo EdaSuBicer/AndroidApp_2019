@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmployeeProfile"
+    android:background="@drawable/back_gradient">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/employee_profile_clinic_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="Clinic Name:"
+                    android:textColor="@color/colorInput"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/employee_profile_clinic_EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textbox_back"
+                    android:ems="10"
+                    android:hint="Clinic Name"
+                    android:drawableLeft="@drawable/ic_local_white_black_24dp"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorInput"
+                    android:textColorHint="@color/hint"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/employee_profile_insurence_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="Insurence Types"
+                    android:textColor="@color/colorInput"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/employee_profile_insurence_EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textbox_back"
+                    android:ems="10"
+                    android:hint="ex: UHIP, OHIP, Private Insurence"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorInput"
+                    android:textColorHint="@color/hint"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/employee_profile_payment_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="Payment Methods"
+                    android:textColor="@color/colorInput"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/employee_profile_payment_EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textbox_back"
+                    android:ems="10"
+                    android:hint="ex: Cash, Debit, Card"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorInput"
+                    android:textColorHint="@color/hint"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/employee_profile_address_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="Address:"
+                    android:textColor="@color/colorInput"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/employee_profile_address_EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textbox_back"
+                    android:ems="10"
+                    android:hint="Address"
+                    android:drawableLeft="@drawable/ic_home_white_24dp"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorInput"
+                    android:textColorHint="@color/hint"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/employee_profile_phone_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="Phone Number:"
+                    android:textColor="@color/colorInput"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/employee_profile_phone_EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textbox_back"
+                    android:ems="10"
+                    android:hint="ex: +1 (123) 456-7890"
+                    android:inputType="phone"
+                    android:textColor="@color/colorInput"
+                    android:textColorHint="@color/hint"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/employee_profile_update_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/loginbutton_back"
+                    android:onClick="update"
+                    android:text="UPDATE"
+                    android:textColor="@color/colorInput" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/addServicesButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Service(s) To Your Profile" />
+
+            <Button
+                android:id="@+id/removeServicesButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Remove Service(s) from your profile" />
+
+            <Button
+                android:id="@+id/btnWorkSched"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="btnSchedule"
+                android:text="Schedule" />
+
+            <Button
+                android:id="@+id/btnClinicHours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="clinic hours" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@drawable/back_gradient">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/signup_acctype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="bottom|start"
+            android:text="@string/signup_text_acctype" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/signup_patientType"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/cbox_patientType" />
+
+            <CheckBox
+                android:id="@+id/signup_employeeType"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/cbox_employeeType" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/surname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/Last_name"
+            android:inputType="textPersonName" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/Male" />
+
+            <CheckBox
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/Female" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:ems="10"
+            android:hint="@string/age"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/email_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/_123456_healthservice_com"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/signup_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/signup_password"
+            android:inputType="textPassword"
+             />
+
+        <Button
+            android:id="@+id/signup_create"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/prescription_back"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:text="@string/create"
+             />
+
+        <Button
+            android:id="@+id/signup_return"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/prescription_back"
+            android:onClick="returnLogIn"
+            android:text="@string/btn_return" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

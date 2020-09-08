@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/welcome_pic"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/popupservice"
+    tools:context=".WelcomePage">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/doctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:contentDescription="@string/doc"
+            android:scaleType="fitStart"
+            app:srcCompat="@drawable/doktorlar" />
+
+        <TextView
+            android:id="@+id/welcome_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="35sp"
+            android:translationY="-100dp" />
+
+        <Button
+            android:id="@+id/searchForClinic"
+            android:layout_width="155dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/loginbutton_back"
+            android:onClick="searchClinic"
+            android:text="search for a clinic"
+            android:translationY="-50dp" />
+
+        <Button
+            android:id="@+id/sign_out"
+            android:layout_width="wrap_content"
+            android:layout_height="57dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="@string/sign_out" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
